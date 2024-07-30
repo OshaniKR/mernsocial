@@ -1,0 +1,32 @@
+.sidebar {
+    padding-top: 50px; /* Adjusted padding to accommodate top navigation */
+    height: calc(100vh - 50px);
+    overflow-y: auto; /* Changed to auto to allow independent scrolling */
+}
+
+.sidebar-wrapper {
+    padding: 20px;
+    max-height: calc(100% - 120px); /* Adjusted maximum height for scrolling */
+}
+
+.sidebar-friend-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar-button {
+    width: 150px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.sidebar-hr {
+    margin: 20px 0;
+}
+
+.sidebar-list-item-text {
+    margin-left: 10px;
+}

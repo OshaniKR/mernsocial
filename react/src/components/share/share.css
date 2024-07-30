@@ -1,0 +1,117 @@
+.share {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.1); /* Updated box shadow */
+    background-color: #ffffff; /* Added a white background */
+}
+
+.shareWrapper {
+    padding: 20px; /* Increased padding for better spacing */
+}
+
+.shareTop {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Added margin bottom for spacing */
+}
+
+.shareProfileImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px; /* Reduced margin for tighter spacing */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* Added a subtle shadow */
+}
+
+.shareInput {
+    flex: 1; /* Expanded input to fill available space */
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Added a light gray background */
+}
+
+.shareInput:focus {
+    outline: none;
+    border: 1px solid #007bff; /* Added a border on focus for better usability */
+}
+
+.shareHr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #e0e0e0; /* Added a light border */
+}
+
+.shareBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shareOptions {
+    display: flex;
+}
+
+.shareOption {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Added transition for smooth hover effect */
+}
+
+.shareOption:hover {
+    transform: scale(1.1); /* Added scale effect on hover */
+}
+
+.shareIcon {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.shareOptionText {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555; /* Added a darker text color */
+}
+
+.shareButton {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #007bff; /* Changed button color to blue */
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Added transition for smooth hover effect */
+}
+
+.shareButton:hover {
+    background-color: #0056b3; /* Darkened button color on hover */
+}
+
+.shareImgContainer {
+    position: relative;
+    margin-bottom: 15px; /* Added margin bottom for spacing */
+}
+
+.shareImg {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* Added a subtle shadow */
+}
+
+.shareCancelImg {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease; /* Added transition for smooth hover effect */
+}
+
+.shareCancelImg:hover {
+    opacity: 1; /* Increased opacity on hover */
+}
