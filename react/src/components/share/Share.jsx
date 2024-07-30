@@ -62,7 +62,7 @@ export default function Share() {
                 <form className="shareBottom" onSubmit={submitHandler}>
                     <div className="shareOptions">
                         <label htmlFor="file" className="shareOption">
-                            <PermMedia htmlColor="#007bff" className="shareIcon" />
+                            <PermMedia htmlColor="#ca8a04" className="shareIcon" />
                             <span className="shareOptionText">Photo or Video</span>
                             <input
                                 style={{ display: "none" }}
@@ -73,15 +73,15 @@ export default function Share() {
                             />
                         </label>
                         <div className="shareOption">
-                            <Label htmlColor="#007bff" className="shareIcon" />
+                            <Label htmlColor="#ca8a04" className="shareIcon" />
                             <span className="shareOptionText">Tag</span>
                         </div>
                         <div className="shareOption">
-                            <Room htmlColor="#007bff" className="shareIcon" />
+                            <Room htmlColor="#ca8a04" className="shareIcon" />
                             <span className="shareOptionText">Location</span>
                         </div>
                         <div className="shareOption">
-                            <EmojiEmotions htmlColor="#007bff" className="shareIcon" />
+                            <EmojiEmotions htmlColor="#ca8a04" className="shareIcon" />
                             <span className="shareOptionText">Feelings</span>
                         </div>
                     </div>
