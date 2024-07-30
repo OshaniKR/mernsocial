@@ -35,11 +35,16 @@ export default function Register() {
   };
 
   return (
-    <div className="register d-flex align-items-center justify-content-center bg-light vh-100">
+    <>
+    <div >
+      <div className="registerbg d-flex align-items-center justify-content-center bg-black vh-100 vw-100"
+      >
+      <div className='register '>
       <div className="registerWrapper row shadow-lg rounded">
-        <div className="registerLeft col-md-6 d-flex flex-column justify-content-center align-items-center bg-primary text-white p-4 rounded-left">
-          <h3 className="registerLogo">ChatterBox</h3>
-          <span className="registerDesc">Connect with friends and the world around you on ChatterBox.</span>
+        <div className="registerLeft col-md-6 d-flex flex-column justify-content-center align-items-center bg-primary text-white p-4 rounded-left" style={{ backgroundImage: `url('/assets/solar.jpeg')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+          <h1 className="registerLogo">SkyLink</h1>
+          <span className="registerDesc">Get Started Today!</span>
+          <span className="registerSubDesc">Join SkyLink today and connect with a vibrant community. Share moments, explore interests, and build meaningful connections where every interaction truly matters.</span>
         </div>
         <div className="registerRight col-md-6 d-flex flex-column justify-content-center p-4">
           <form className="registerBox" onSubmit={handleClick}>
@@ -47,11 +52,18 @@ export default function Register() {
             <input placeholder="Email" required ref={email} className="form-control mb-3" type="email" />
             <input placeholder="Password" required ref={password} className="form-control mb-3" type="password" minLength="6" />
             <input placeholder="Confirm Password" required ref={passwordAgain} className="form-control mb-3" type="password" />
-            <button className="btn btn-primary w-100 mb-3" type="submit">Sign Up</button>
-            <button className="btn btn-success w-100" type="button" onClick={handleLoginClick}>Log into your Account</button>
+            <button className="btn  w-100 mb-3" type="submit" style= {{background: 'linear-gradient(to right, #3b82f6, #172554)',color: 'white',border: 'none',padding: '10px 20px',transition: 'background-color 0.3s ease'}}>Sign Up</button>
+            <button className="btn  w-100" type="button" onClick={handleLoginClick} style={{background: 'linear-gradient(to right, #ca8a04, #422006)',color: 'white',border: 'none',padding: '10px 20px',transition: 'background-color 0.3s ease'}}>Log into your Account</button>
           </form>
         </div>
       </div>
     </div>
+      </div>
+       
+      
+      </div>
+      
+  
+    </>
   );
 }

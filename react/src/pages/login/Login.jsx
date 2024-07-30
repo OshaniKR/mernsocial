@@ -35,10 +35,7 @@ export default function Login() {
   return (
     <div className="login d-flex align-items-center justify-content-center vh-100 bg-light">
       <div className="loginWrapper row shadow-lg rounded">
-        <div className="loginLeft col-md-6 d-flex flex-column justify-content-center align-items-center bg-primary text-white p-4 rounded-left">
-          <h3 className="loginLogo">ChatterBox</h3>
-          <span className="loginDesc">Connect with friends and the world around you on ChatterBox.</span>
-        </div>
+        
         <div className="loginRight col-md-6 d-flex flex-column justify-content-center p-4">
           {errorMessage && <div className="alert alert-danger" role="alert">{errorMessage}</div>}
           <form className="loginBox" onSubmit={handleClick}>

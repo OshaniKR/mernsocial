@@ -1,34 +1,41 @@
 .register {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
+    width: 80%;
+    height: 80%;
     align-items: center;
+    display: flex;
     justify-content: center;
-    background-color: #f0f2f5;
+    border-radius: 20px;
+    background-color: #f0f2f562;
   }
   
   .registerWrapper {
-    width: 70%;
-    height: 70%;
+    width: 85%;
+    height: 80%;
     display: flex;
     border-radius: 10px;
     overflow: hidden;
   }
   
   .registerLeft {
-    background-color: #1775ee;
+    background-color: #0e0e0f;
   }
   
   .registerLogo {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 700;
     color: #fff;
     margin-bottom: 10px;
   }
   
   .registerDesc {
-    font-size: 24px;
+    font-size: 32px;
     color: #fff;
+  }
+  .registerSubDesc {
+    font-size: 20px;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
   }
   
   .registerRight {
@@ -54,10 +61,12 @@
   .form-control:focus {
     outline: none;
     box-shadow: none;
+    
   }
   
   .btn {
     height: 50px;
+    border: none;
     border-radius: 10px;
     font-size: 20px;
     font-weight: 500;
