@@ -80,7 +80,7 @@
     border: none;
     padding: 10px 20px;
     border-radius: 8px;
-    background-color: #007bff; /* Changed button color to blue */
+    background: linear-gradient(to right, #422006, #ca8a04, #422006);
     color: #fff;
     font-weight: 500;
     cursor: pointer;

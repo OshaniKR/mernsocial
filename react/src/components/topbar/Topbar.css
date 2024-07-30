@@ -3,7 +3,7 @@
 .topbarContainer {
     height: 60px;
     width: 100%;
-    background-color: #1775ee;
+    background: linear-gradient(to right, #422006, #ca8a04, #422006);
     display: flex;
     align-items: center;
     position: sticky;
@@ -96,6 +96,7 @@
   .topbarIconItem {
     margin-right: 20px;
     cursor: pointer;
+    color: #e9ebee;
     position: relative;
     transition: color 0.3s ease;
   }

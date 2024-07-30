@@ -1,32 +1,75 @@
+/* Sidebar container */
 .sidebar {
-    padding-top: 50px; /* Adjusted padding to accommodate top navigation */
+    padding-top: 20px;
     height: calc(100vh - 50px);
-    overflow-y: auto; /* Changed to auto to allow independent scrolling */
-}
-
-.sidebar-wrapper {
+    flex: 2;
+    overflow-y: auto;
+  }
+  
+  /* Wrapper inside the sidebar */
+  .sidebar-wrapper {
     padding: 20px;
-    max-height: calc(100% - 120px); /* Adjusted maximum height for scrolling */
-}
-
-.sidebar-friend-list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.sidebar-button {
+    max-height: calc(100% - 120px);
+  }
+  
+  /* Styling for each navigation item */
+  .nav-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Style for the icon */
+  .icon {
+    font-size: 24px;
+    margin-right: 10px;
+    background: linear-gradient(to right, #422006, #ca8a04, #422006);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Style for the text */
+  .text {
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(to right, #422006, #ca8a04, #422006);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Sidebar buttons */
+  .sidebar-button {
     width: 150px;
     border: none;
     padding: 10px;
     border-radius: 5px;
     font-weight: 500;
-}
-
-.sidebar-hr {
+    background: linear-gradient(to right, #422006, #ca8a04, #422006);
+  }
+  
+  /* Horizontal rule styling */
+  .sidebar-hr {
     margin: 20px 0;
-}
-
-.sidebar-list-item-text {
+  }
+  
+  /* Friend list in the sidebar */
+  .sidebar-friend-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  /* Text in sidebar list items */
+  .sidebar-list-item-text {
     margin-left: 10px;
-}
+    color: #422006;
+  }
+  

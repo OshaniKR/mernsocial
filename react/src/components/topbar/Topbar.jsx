@@ -19,7 +19,7 @@ export default function Topbar() {
     <div className='topbarContainer'>
       <div className="topbarLeft">
         <Link to="/" className='logo'>
-          ChatterBox
+          SkyLink
         </Link>
       </div>
 

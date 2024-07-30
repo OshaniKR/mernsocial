@@ -21,7 +21,7 @@ export default function Login() {
       const result = await loginCall({ email: email.current.value, password: password.current.value }, dispatch);
       toast.success('Login successful! Redirecting...');
       setTimeout(() => {
-        navigate('/', { state: { successMessage: 'Login successful!' } }); // Pass success message
+        navigate('/', { state: { successMessage: 'Login successful!' } });
       }, 2000);
     } catch (err) {
       setErrorMessage('Login failed! Please check your credentials and try again.');
@@ -33,26 +33,30 @@ export default function Login() {
   };
 
   return (
-    <div className="login d-flex align-items-center justify-content-center vh-100 bg-light">
-      <div className="loginWrapper row shadow-lg rounded">
-        
-        <div className="loginRight col-md-6 d-flex flex-column justify-content-center p-4">
-          {errorMessage && <div className="alert alert-danger" role="alert">{errorMessage}</div>}
-          <form className="loginBox" onSubmit={handleClick}>
-            <input placeholder="Email" type="email" required className="form-control mb-3" ref={email} />
-            <input placeholder="Password" type="password" required minLength="6" className="form-control mb-3" ref={password} />
-            <button className="btn btn-primary w-100 mb-3" type="submit" disabled={isFetching}>
-              {isFetching ? <CircularProgress color="inherit" size={24} /> : "Log In"}
-            </button>
-            <span className="loginForgot text-primary text-center mb-3">Forgot Password?</span>
-            <button className="btn btn-success w-100" type="button" onClick={handleRegisterClick} disabled={isFetching}>
-              {isFetching ? <CircularProgress color="inherit" size={24} /> : "Create a New Account"}
-            </button>
-          </form>
+    <>
+      <div className="loginImg d-flex align-items-center justify-content-center vh-100 bg-light"
+           style={{ backgroundImage: `url('/assets/solar.jpeg')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="login">
+          <div className="loginWrapper shadow-lg rounded">
+            <h2 className='loginText'>Login</h2>
+            <div className="loginRight">
+              {errorMessage && <div className="alert alert-danger" role="alert">{errorMessage}</div>}
+              <form className="loginBox" onSubmit={handleClick}>
+                <input placeholder="Email" type="email" required className="form-control" ref={email} />
+                <input placeholder="Password" type="password" required minLength="6" className="form-control" ref={password} />
+                <button className="btn  w-100" type="submit" style= {{background: 'linear-gradient(to right, #3b82f6, #172554)',color: 'white',border: 'none',padding: '10px 20px',transition: 'background-color 0.3s ease'}} disabled={isFetching}>
+                  {isFetching ? <CircularProgress color="inherit" size={24} /> : "Log In"}
+                </button>
+                <span className="loginForgot">Forgot Password?</span>
+                <button className="btn  w-100" type="button" style={{background: 'linear-gradient(to right, #ca8a04, #422006)',color: 'white',border: 'none',padding: '10px 20px',transition: 'background-color 0.3s ease'}} onClick={handleRegisterClick} disabled={isFetching}>
+                  {isFetching ? <CircularProgress color="inherit" size={24} /> : "Create a New Account"}
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
+        <ToastContainer />
       </div>
-      <ToastContainer />
-    </div>
+    </>
   );
 }
-

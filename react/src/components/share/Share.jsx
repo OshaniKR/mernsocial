@@ -38,7 +38,7 @@ export default function Share() {
     };
 
     return (
-        <div className="share">
+        <div className="share" style={{ backgroundImage: `url('/assets/solar4.jpeg')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <div className="shareWrapper">
                 <div className="shareTop">
                     <img

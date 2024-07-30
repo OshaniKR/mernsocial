@@ -37,8 +37,7 @@ export default function Register() {
   return (
     <>
     <div >
-      <div className="registerbg d-flex align-items-center justify-content-center bg-black vh-100 vw-100"
-      >
+      <div className="registerbg d-flex align-items-center justify-content-center bg-black vh-100 vw-100" style={{ backgroundImage: `url('/assets/solar3.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className='register '>
       <div className="registerWrapper row shadow-lg rounded">
         <div className="registerLeft col-md-6 d-flex flex-column justify-content-center align-items-center bg-primary text-white p-4 rounded-left" style={{ backgroundImage: `url('/assets/solar.jpeg')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
