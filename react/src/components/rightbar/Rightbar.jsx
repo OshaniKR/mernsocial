@@ -51,9 +51,11 @@ export default function Rightbar({ user }) {
   const HomeRightbar = () => {
     return (
       <>
-        <div className="birthdayContainer">
-          <img className='birthdayImg' src="assets/Icons/christmas.png" alt="" />
-          <span className="birthdayText"><b>Uresha</b> and <b>3 others</b> have birthday Today</span>
+        <div className="noticeContainer">
+          <h3 className='noticeHeading'>Special Notices</h3>
+          <h5 className='noticeSubHeading'>Perseverance Rover</h5>
+          <img className='noticeImg' src="assets/mars.jpeg" alt="" />
+          <span className="noticeText">NASA's Perseverance Rover landed on Mars in February 2021, embarking on a mission to search for signs of past life and collect rock samples for a future return to Earth. Accompanying Perseverance, the Ingenuity Helicopter has successfully completed over 50 flights, demonstrating the feasibility of aerial mobility on another planet and providing valuable data for future Mars exploration.</span>
         </div>
        {/*  <img className="rightbarAdd" src="assets/Icons/add.jpeg" alt="" />*/}
         <h4 className="rightbarTitle">Online Friends</h4>
@@ -98,7 +100,7 @@ export default function Rightbar({ user }) {
           {friends.map((friend) => (
             <Link to={"/profile/" + friend.username} style={{ textDecoration: "none" }} key={friend._id}>
               <div className="rightbarFollowing">
-                <img src={friend.profilePicture ? PF + friend.profilePicture : PF + "/person/noProfile.jpeg"} alt="" className="rightbarFollowingImg" />
+                <img src={friend.profilePicture ? PF + friend.profilePicture : PF + "/person/empty.jpeg"} alt="" className="rightbarFollowingImg" />
                 <span className="rightbarFollowingName">{friend.username}</span>
               </div>
             </Link>
